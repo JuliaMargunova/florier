@@ -1,0 +1,187 @@
+
+.header_new {
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    height: 80px;
+}
+
+.header_new .header_container {
+    width: 1280px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.menu_button, .m_place, .m_nav, .m_footer_content, .m_filter, .m_open_filter_menu, .m_product_photo, .m_basket, .m_pay, .m_hide, .m_table {
+    display: none;
+}
+
+.header_new .header_container .logo {
+    height: 100%;
+    float: left;
+}
+
+.header_new .header_container .separator {
+    position: relative;
+}
+
+.header_new .header_container .title {
+    height: 100%;
+    padding: 0 25px;
+    float: left;
+    text-transform: uppercase;
+}
+
+.header_new .header_container .separator {
+    position: relative;
+}
+
+.header_new .header_container .separator:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    height: 30px;
+    right: 0;
+    border-right: 1px solid #333333;
+}
+
+.header_new .header_container .title .orange_title {
+    margin-top: 25px;
+    color: #FF883F;
+}
+
+.header_new .header_container .place {
+    float: left;
+    margin-left: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header_new .header_container .place:before {
+    position: absolute;
+    content: "";
+    margin-top: 25px;
+    top: 5px;
+    bottom: 10px;
+    left: 0px;
+    height: 18px;
+    width: 18px;
+    background-image: url(../../styles/new-images/arrow.png);
+}
+
+.header_new .header_container .place {
+    float: left;
+    margin-left: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.header_new .header_container .place:before {
+    position: absolute;
+    content: "";
+    margin-top: 25px;
+    top: 5px;
+    bottom: 10px;
+    left: 0px;
+    height: 18px;
+    width: 18px;
+    background-image: url(../../styles/new-images/arrow.png);
+}
+
+.header_new .header_container .place:after {
+    position: absolute;
+    content: "";
+    margin-top: 25px;
+    top: 10px;
+    bottom: 10px;
+    right: 0px;
+    height: 9px;
+    width: 16px;
+    background-repeat: no_repeat;
+    background-image: url(../../styles/new-images/arrow-down-gray.png);
+}
+
+.header_new .header_container .place .places {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: Comfortaa_Regular;
+    text-decoration: underline;
+    border: 0;
+    margin-top: 15px;
+    overflow: hidden;
+    padding: 18px 26px;
+    padding-right: 36px;
+    white-space: nowrap;
+    outline: none;
+    text-decoration: underline;
+}
+
+.header_new .header_container .user_panel_new {
+    float: right;
+}
+
+.header_new .header_container .user_panel_new .heart {
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    margin-top: 28px;
+    display: inline_block;
+    background-repeat: no_repeat;
+    height: 23px;
+    width: 25px;
+    -webkit-background_size: cover;
+    -moz-background_size: cover;
+    -o-background_size: cover;
+    background-size: cover;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-image: url(../../styles/new-images/heart-light-contour.png);
+}
+
+
+
+.header_new .header_container .user_panel_new .orange_button {
+    width: 90px;
+}
+
+.header_new .header_container .user_panel_new button {
+    display: block;
+    float: left;
+    margin-top: 23px;
+    margin-left: 20px;
+    height: 33px;
+}
+
+.container-new .orange_button {
+    background: #FF883F;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+
+.header_new .header_container .user_panel_new .green_button {
+    width: 180px;
+}
+
+.header_new .header_container .user_panel_new button {
+    display: block;
+    float: left;
+    margin-top: 23px;
+    margin-left: 20px;
+    height: 33px;
+}
+
+.container-new .green_button {
+    background: #3ECF7A;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
