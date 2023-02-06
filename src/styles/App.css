@@ -570,9 +570,242 @@ img {
     float: left;
     margin-top: 5px;
 }
-/* 
+
 .stars-small-yellow {
     height: 14px;
     width: 85px;
-    background: url(images/stars-small-orange.png) 0 0 repeat-x;
-} */
+    /* background: url(images/stars-small-orange.png) 0 0 repeat-x; */
+}
+
+/* Product */
+
+.popular-items-list {
+    display: block;
+    overflow: auto;
+    list-style: none;
+    padding-left: 39px;
+    padding-right: 39px;
+}
+
+.popular-items-list .popular-item a {
+    text-decoration: none;
+}
+
+.popular-items-list .popular-item.first {
+    margin-left: 0px;
+}
+.popular-items-list .popular-item {
+    margin-left: 24px;
+    float: left;
+    display: block;
+    position: relative;
+    outline: none;
+}
+
+.popular-items-list .popular-item .popular-item-content {
+    width: 280px;
+    border: 1px solid #CCCCCC;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    margin-bottom: 24px;
+    -ms-border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+}
+
+.popular-items-list .popular-item .popular-item-content .image-item {
+    position: relative;
+}
+
+.popular-items-list .popular-item .popular-item-content .image-item .empty {
+    content: url(new-images/popular-heart-empty.png);
+    -ms-opacity: 0;
+    opacity: 0;
+}
+
+.popular-items-list .popular-item .popular-item-content .image-item .heart {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    content: url(new-images/popular-heart.png);
+    height: 23px;
+    width: 25px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.popular-items-list .popular-item .popular-item-content .image-item .wrap {
+    background: url(new-images/default-bouquet.jpg) 50% 50% no-repeat;
+    width: 280px;
+    height: 262px;
+}
+
+.popular-items-list .popular-item .popular-item-content .image-item img {
+    height: 262px;
+}
+
+.popular-items-list .popular-item .popular-item-content .image-item .title-shadow {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    text-shadow: 2px 2px 2px #1a1a1a, 0 0 1em #1a1a1a;
+    color: #fff;
+    font-size: 16px;
+    width: 96%;
+}
+
+.popular-items-list .popular-item .popular-item-content .image-item .more-information-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(51, 51, 51, 0.85);
+    color: #ffffff;
+    -ms-opacity: 0;
+    opacity: 0;
+}
+
+.popular-items-list .popular-item .popular-item-content .image-item .more-information-item .size {
+    margin: 15px;
+}
+
+.popular-items-list .popular-item .popular-item-content .image-item .more-information-item p {
+    margin-left: 15px;
+    line-height: 1.4;
+}
+
+popular-items-list .popular-item .popular-item-content .image-item .more-information-item .underline-text {
+    margin-top: 22px;
+    text-decoration: underline;
+}
+
+.popular-items-list .popular-item .popular-item-content .details {
+    height: 119px;
+    position: relative;
+    padding-right: 12px;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .stars-new {
+    margin-left: 15px;
+    margin-top: 10px;
+    height: 15px;
+    width: 80px;
+    position: relative;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .stars-new .empty {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(new-images/star-empty.png) repeat-x;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .stars-new .raiting {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(new-images/star.png) repeat-x;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .delivers {
+    color: #27AE60;
+    margin-top: 17px;
+    height: 27px;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .delivers .type-of-deliver {
+    height: 30px;
+    margin-top: 2px;
+    float: left;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .delivers .type-of-deliver .explain {
+    -webkit-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .delivers .type-of-deliver .icon {
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .delivers .deliver {
+    margin-left: 21px;
+    margin-right: 25px;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .delivers .type-of-deliver {
+    height: 30px;
+    margin-top: 2px;
+    float: left;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .delivers .type-of-deliver .explain {
+    -webkit-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .delivers .type-of-deliver .icon {
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .delivers .date-of-deliver {
+    float: left;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .buy-section {
+    margin-top: 7px;
+    padding-bottom: 12px;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .buy-section .price {
+    font-size: 20px;
+    width: 126px;
+    display: inline-block;
+    text-align: left;
+    padding-left: 14px;
+    color: #333;
+    vertical-align: sub;
+}
+
+.popular-items-list .popular-item .popular-item-content .details .buy-section .buy-button {
+    font-size: 14px;
+    height: 33px;
+    width: 123px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.popular-items-list .popular-item-content .details .payment-options {
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    text-align: right;
+}
+
+.popular-items-list .popular-item-content .details .payment-options img {
+    margin-left: 5px;
+    width: 28px;
+    height: 20px;
+}
