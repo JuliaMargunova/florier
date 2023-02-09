@@ -97,11 +97,6 @@ const productSlice = createSlice({
         });
 
         builder.addCase(fetchProducts.fulfilled, (state, action) => {
-            console.log('fulfilled');
-            console.log(action.payload);
-
-            // state.items = action.payload;
-
             state.items = action.payload.map((item) => (
                 {
                     productId: item.ProductId,
@@ -113,8 +108,12 @@ const productSlice = createSlice({
                     rating: item.Rating,
                     widthFormat: 'Ширина ' + item.Width + ' см',
                     heightFormat: 'Высота ' + item.Height + ' см',
-                    sizeFormat: '&#x2194 ' + item.Width + 'см &nbsp;&nbsp; &#x2195 ' + item.Height + 'см',
-                    components: item.Components,
+                    sizeFormat: '↔ ' + item.Width + 'см     ↕ ' + item.Height + 'см',
+                    components: item.Components.map((plant,i) => ({
+                        plantId: i,
+                        title: plant.Title,
+                        count: plant.Count
+                    })),
                     shopTitleFormat: 'Букет создал магазин «' + item.ShopTitle + '»',
                     viewLink: '/product/' + item.ProductId + (item.TranslitTitle ? '/' + item.TranslitTitle : ''),
                     isCourierDelivery: item.IsCourierDelivery ? true : false,
@@ -123,9 +122,7 @@ const productSlice = createSlice({
                         ? item.BouquetQualityAverage
                         : 0,
                     supply: item.Supply
-
                 }
-                // supplyInfo: ko.observable()})
 
             ));
 

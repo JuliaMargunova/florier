@@ -2,12 +2,9 @@ import React from 'react';
 import Product from '../../components/Product/Product';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchProducts } from '../../redux/product/slice';
-import {selectProduct} from '../../redux/product/selectors';
+import { selectProduct } from '../../redux/product/selectors';
 
 const Products = () => {
-    //console.log("answer ", productsAPI.getProducts());
-    const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-   
     const [isLoading, setIsLoading] = React.useState(true);
     const dispatch = useDispatch();
     const items = useSelector(selectProduct);
@@ -27,15 +24,13 @@ const Products = () => {
 
     React.useEffect(() => {
         getProducts();
-
     }, []);
 
     return (
         <ul className="popular-items-list">
-            { items.map((item) => <li key={item.ProductId}><Product {...item} /></li>)}
-            {console.log('items', items)}
+            {items.map((item) => <li key={item.productId}><Product {...item} /></li>)}
         </ul>
-        
+
     )
 }
 
