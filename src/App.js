@@ -9,11 +9,11 @@ import Reviews from './pages/Reviews/Reviews';
 import icon from './styles/new-images/all_payment_logo_transparent.png';
 
 import Footer from './components/Footer/Footer';
-import Products from './components/Products/Products';
+import Products from './pages/Products/Products';
 
 
 const App = () => {
-    console.log("answer ", productsAPI.getProducts());
+  //  console.log("answer ", productsAPI.getProducts());
 
 
 

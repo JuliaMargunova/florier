@@ -12,9 +12,9 @@ export const productsAPI = {
     // getProducts(currentPage, pageSize) {
     //     return instance.get(`users?page=${currentPage}&count=${pageSize}`).then(response => response.data)
     // }
-   async getProducts() {
+    getProducts() {
         //return await instance.get("api/api/Product/GetAllProducts")
-        const response = await axios.get('http://florier-api.somee.com/api/api/Product/GetPopularProducts' )
+        const response =  axios.get('http://florier-api.somee.com/api/api/Product/GetPopularProducts' );
         //const response = await axios.get('http://localhost:4762/api/Product/GetAllProducts' )
         return response;
     }
