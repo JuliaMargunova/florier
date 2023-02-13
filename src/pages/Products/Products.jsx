@@ -27,9 +27,11 @@ const Products = () => {
     }, []);
 
     return (
-        <ul className="popular-items-list">
-            {items.map((item) => <li key={item.productId}><Product {...item} /></li>)}
-        </ul>
+        <div className='popular-items' >
+            <ul className="popular-items-list">
+                {items.map((item) => <li key={item.productId}><Product {...item} /></li>)}
+            </ul>
+        </div>
 
     )
 }

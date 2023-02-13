@@ -10,10 +10,12 @@ import icon from './styles/new-images/all_payment_logo_transparent.png';
 
 import Footer from './components/Footer/Footer';
 import Products from './pages/Products/Products';
+import ProductInfo from './pages/ProductInfo/ProductInfo';
+import { Routes, Route } from 'react-router-dom';
 
 
 const App = () => {
-  //  console.log("answer ", productsAPI.getProducts());
+    //  console.log("answer ", productsAPI.getProducts());
 
 
 
@@ -24,10 +26,18 @@ const App = () => {
                     <Header />
                     <Navigation />
                     <BreadcrumbList />
-                    
-                    {/* <Reviews /> */}
-                    <Products/>
-                
+
+                    <div id="content">
+                        <Routes>
+                            <Route exact path="/catalog" element={<Products />} />
+                            <Route path="/reviews" element={<Reviews />} />
+                            <Route path="/productInfo" element={<ProductInfo />} />
+                            {/* <Route path="*" element={<Products />} /> */}
+                        </Routes>
+                      
+                    </div>
+
+
                 </div>
                 <Footer />
             </div>

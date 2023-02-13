@@ -7,14 +7,8 @@ import shop from '../.././styles/new-images/shop.png';
 
 const Product = ({ title, mainSmallPhoto, priceFormatBYN, bouquetQualityAverage, sizeFormat, components }) => {
 
-    const [hover, toggle] = React.useReducer(hover => !hover, false);
-    // const onLeave = () => {
-    //     setHover(false);
-    // };
-
-    // const onHover = () => {
-    //     setHover(true);
-    // };
+    //const [hover, toggle] = React.useReducer(hover => !hover, false);
+ 
     return (
         <div className="popular-item">
             <a href="/product/483/buket-klubnika-v-glazuri-500g" >
@@ -27,7 +21,8 @@ const Product = ({ title, mainSmallPhoto, priceFormatBYN, bouquetQualityAverage,
                         </div>
                         <div className="title-shadow" >{title}</div>
 
-                        <div className="more-information-item" style={{ opacity: hover ? 3 : 0 }} onMouseLeave={toggle} onMouseEnter={toggle}>
+                        {/* <div className="more-information-item" style={{ opacity: hover ? 3 : 0 }} onMouseLeave={toggle} onMouseEnter={toggle}> */}
+                        <div className="more-information-item" >
                             <p className="size" >{sizeFormat}</p>
                             {components.map((plant) => <p key={plant.plantId}> {plant.title + ' — ' + plant.count + ' шт.,'}</p>)}
                             <p className="underline-text">{title}</p>

@@ -108,7 +108,7 @@ const productSlice = createSlice({
                     rating: item.Rating,
                     widthFormat: 'Ширина ' + item.Width + ' см',
                     heightFormat: 'Высота ' + item.Height + ' см',
-                    sizeFormat: '↔ ' + item.Width + 'см     ↕ ' + item.Height + 'см',
+                    sizeFormat: '↔ ' + item.Width + 'см    ↕ ' + item.Height + 'см',
                     components: item.Components.map((plant,i) => ({
                         plantId: i,
                         title: plant.Title,

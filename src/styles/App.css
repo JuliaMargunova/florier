@@ -620,6 +620,10 @@ img {
     position: relative;
 }
 
+.popular-items-list .popular-item .popular-item-content .image-item:hover .more-information-item {
+    display: block;
+}
+
 .popular-items-list .popular-item .popular-item-content .image-item .empty {
     content: url(new-images/popular-heart-empty.png);
     -ms-opacity: 0;
@@ -657,30 +661,9 @@ img {
     width: 96%;
 }
 
-.popular-items-list .popular-item .popular-item-content .image-item .more-information-item {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(51, 51, 51, 0.85);
-    color: #ffffff;
-    -ms-opacity: 0;
-    opacity: 0;
-}
 
 .popular-items-list .popular-item .popular-item-content .image-item .more-information-item .size {
     margin: 15px;
-}
-
-.popular-items-list .popular-item .popular-item-content .image-item .more-information-item p {
-    margin-left: 15px;
-    line-height: 1.4;
-}
-
-popular-items-list .popular-item .popular-item-content .image-item .more-information-item .underline-text {
-    margin-top: 22px;
-    text-decoration: underline;
 }
 
 .popular-items-list .popular-item .popular-item-content .details {
@@ -809,3 +792,33 @@ popular-items-list .popular-item .popular-item-content .image-item .more-informa
     width: 28px;
     height: 20px;
 }
+
+.popular-items-list .popular-item .popular-item-content .image-item .more-information-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(51, 51, 51, 0.85);
+    color: #ffffff;
+    /* -ms-opacity: 0;
+    opacity: 0; */
+    display: none;
+}
+
+.popular-items-list .popular-item .popular-item-content .image-item .more-information-item p {
+    margin-left: 15px;
+    line-height: 1.4;
+}
+
+.popular-items-list .popular-item .popular-item-content .image-item .more-information-item .underline-text {
+    margin-top: 22px;
+    text-decoration: underline;
+}
+
+/* .popular-items {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+} */
+
